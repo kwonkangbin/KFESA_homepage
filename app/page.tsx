@@ -716,6 +716,7 @@ const Footer = ({ lang }: { lang: Lang }) => {
           </div>
           
           <div className="text-sm text-center md:text-right">
+            <p className="mb-1">서울특별시 강남구 압구정로 306</p>
             <p className="mb-2"><span className="text-white font-bold">{t.contact_info}:</span> kfesa.office@gmail.com</p>
             <p>&copy; {new Date().getFullYear()} KFESA. {t.rights}</p>
           </div>
