@@ -110,7 +110,9 @@ const content: Record<Lang, any> = {
     },
     footer: {
       contact_info: '문의',
-      rights: 'All rights reserved.'
+      rights: 'All rights reserved.',
+      registration: '법인번호',
+      address: '서울특별시 강남구 압구정로2길 46'
     },
     floating: {
       label: '지원하기'
@@ -213,7 +215,9 @@ const content: Record<Lang, any> = {
     },
     footer: {
       contact_info: 'Contact',
-      rights: 'All rights reserved.'
+      rights: 'All rights reserved.',
+      registration: 'Business Registration',
+      address: '46, Apgujeong-ro 2-gil, Gangnam-gu, Seoul'
     },
     floating: {
       label: 'Apply Now'
@@ -716,7 +720,8 @@ const Footer = ({ lang }: { lang: Lang }) => {
           </div>
           
           <div className="text-sm text-center md:text-right">
-            <p className="mb-1">서울특별시 강남구 압구정로 306</p>
+            <p className="mb-1">{t.registration}: 133-82-74512</p>
+            <p className="mb-1">{t.address}</p>
             <p className="mb-2"><span className="text-white font-bold">{t.contact_info}:</span> kfesa.office@gmail.com</p>
             <p>&copy; {new Date().getFullYear()} KFESA. {t.rights}</p>
           </div>
