@@ -112,7 +112,7 @@ const content: Record<Lang, any> = {
       contact_info: '문의',
       rights: 'All rights reserved.',
       registration: '법인번호',
-      address: '서울특별시 강남구 압구정로2길 46',
+      address: '서울특별시 강남구 압구정로2길 46 214호',
       representative: '대표'
     },
     floating: {
@@ -218,7 +218,7 @@ const content: Record<Lang, any> = {
       contact_info: 'Contact',
       rights: 'All rights reserved.',
       registration: 'Business Registration',
-      address: '46, Apgujeong-ro 2-gil, Gangnam-gu, Seoul',
+      address: '214, 46, Apgujeong-ro 2-gil, Gangnam-gu, Seoul',
       representative: 'CEO'
     },
     floating: {
