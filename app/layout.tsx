@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "KFESA - 한국외국인일자리협회",
   description: "Korea Foreign Employment Support Association - 한국에서 일하고자 하는 외국인의 든든한 파트너",
+  verification: {
+    other: {
+      "naver-site-verification": ["5cd6aab3517ae14bb159ed6a9fdc64fd5a5afff0"],
+    },
+  },
 };
 
 export default function RootLayout({
