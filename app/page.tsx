@@ -104,7 +104,7 @@ const content: Record<Lang, any> = {
       inquiry: {
         title: '이메일 문의',
         desc: '협회 활동이나 기타 궁금한 점을 메일로 보내주세요.',
-        email: 'kfesa.office@gmail.com',
+        email: 'office@kfesa.org',
         button: '메일 보내기'
       }
     },
@@ -112,7 +112,8 @@ const content: Record<Lang, any> = {
       contact_info: '문의',
       rights: 'All rights reserved.',
       registration: '법인번호',
-      address: '서울특별시 강남구 압구정로2길 46'
+      address: '서울특별시 강남구 압구정로2길 46',
+      representative: '대표'
     },
     floating: {
       label: '지원하기'
@@ -209,7 +210,7 @@ const content: Record<Lang, any> = {
       inquiry: {
         title: 'Email Inquiry',
         desc: 'Send us an email for general inquiries.',
-        email: 'kfesa.office@gmail.com',
+        email: 'office@kfesa.org',
         button: 'Send Email'
       }
     },
@@ -217,7 +218,8 @@ const content: Record<Lang, any> = {
       contact_info: 'Contact',
       rights: 'All rights reserved.',
       registration: 'Business Registration',
-      address: '46, Apgujeong-ro 2-gil, Gangnam-gu, Seoul'
+      address: '46, Apgujeong-ro 2-gil, Gangnam-gu, Seoul',
+      representative: 'CEO'
     },
     floating: {
       label: 'Apply Now'
@@ -679,8 +681,8 @@ const EducationPage = ({ lang, setCurrentPage }: {
                <p className="text-slate-600 mb-6 text-sm">
                  교육 과정 및 일정에 대한 상세한 문의는 아래 메일로 연락주세요.
                </p>
-               <a href="mailto:kfesa.office@gmail.com" className="flex items-center gap-3 text-[#0f4c81] font-bold hover:underline">
-                 <Mail size={20} /> kfesa.office@gmail.com
+               <a href="mailto:office@kfesa.org" className="flex items-center gap-3 text-[#0f4c81] font-bold hover:underline">
+                 <Mail size={20} /> office@kfesa.org
                </a>
              </div>
           </div>
@@ -720,9 +722,10 @@ const Footer = ({ lang }: { lang: Lang }) => {
           </div>
           
           <div className="text-sm text-center md:text-right">
+            <p className="mb-1">{t.representative}: {lang === 'ko' ? '최동혁' : 'Choi Dong-hyuk'}</p>
             <p className="mb-1">{t.registration}: 133-82-74512</p>
             <p className="mb-1">{t.address}</p>
-            <p className="mb-2"><span className="text-white font-bold">{t.contact_info}:</span> kfesa.office@gmail.com</p>
+            <p className="mb-2"><span className="text-white font-bold">{t.contact_info}:</span> office@kfesa.org</p>
             <p>&copy; {new Date().getFullYear()} KFESA. {t.rights}</p>
           </div>
         </div>
